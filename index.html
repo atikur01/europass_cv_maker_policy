@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Privacy Policy for Europass CV Maker - Understand how your data is handled and protected.">
+    <title>Privacy Policy - Europass CV Maker</title>
+    <style>
+        :root {
+            --primary: #1565C0;
+            --primary-dark: #0D47A1;
+            --primary-light: #E3F2FD;
+            --accent: #00B0FF;
+            --text-main: #1E293B;
+            --text-muted: #64748B;
+            --bg-main: #F8FAFC;
+            --card-bg: #FFFFFF;
+            --border-color: #E2E8F0;
+            --success: #10B981;
+            --warning-bg: #FEF3C7;
+            --warning-border: #F59E0B;
+            --warning-text: #92400E;
+            --radius-sm: 8px;
+            --radius-md: 14px;
+            --radius-lg: 20px;
+            --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -2px rgba(0, 0, 0, 0.05);
+            --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.07), 0 4px 6px -4px rgba(0, 0, 0, 0.05);
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            background-color: var(--bg-main);
+            color: var(--text-main);
+            line-height: 1.7;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        .container {
+            max-width: 920px;
+            margin: 0 auto;
+            padding: 40px 20px 80px;
+        }
+
+        header {
+            background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+            color: #FFFFFF;
+            border-radius: var(--radius-lg);
+            padding: 48px 36px;
+            margin-bottom: 32px;
+            box-shadow: var(--shadow-lg);
+            position: relative;
+            overflow: hidden;
+        }
+
+        header::after {
+            content: "";
+            position: absolute;
+            top: -50%;
+            right: -10%;
+            width: 300px;
+            height: 300px;
+            background: radial-gradient(circle, rgba(255,255,255,0.12) 0%, rgba(255,255,255,0) 70%);
+            border-radius: 50%;
+        }
+
+        .badge {
+            display: inline-block;
+            background: rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(8px);
+            padding: 6px 14px;
+            border-radius: 999px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+            margin-bottom: 16px;
+        }
+
+        header h1 {
+            font-size: 2.25rem;
+            font-weight: 800;
+            line-height: 1.25;
+            margin-bottom: 12px;
+        }
+
+        header p.subtitle {
+            font-size: 1.1rem;
+            opacity: 0.92;
+            max-width: 650px;
+        }
+
+        .meta-bar {
+            margin-top: 24px;
+            padding-top: 20px;
+            border-top: 1px solid rgba(255, 255, 255, 0.2);
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            font-size: 0.9rem;
+            opacity: 0.95;
+        }
+
+        .meta-item strong {
+            font-weight: 700;
+        }
+
+        .card {
+            background: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: var(--radius-md);
+            padding: 32px;
+            margin-bottom: 24px;
+            box-shadow: var(--shadow);
+        }
+
+        .summary-box {
+            background: #F0FDF4;
+            border: 1px solid #86EFAC;
+            border-left: 5px solid var(--success);
+            border-radius: var(--radius-sm);
+            padding: 20px 24px;
+            margin-bottom: 28px;
+        }
+
+        .summary-box h3 {
+            color: #166534;
+            font-size: 1.1rem;
+            margin-bottom: 8px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .summary-box p {
+            color: #15803D;
+            font-size: 0.95rem;
+            line-height: 1.6;
+        }
+
+        h2 {
+            color: var(--primary-dark);
+            font-size: 1.45rem;
+            font-weight: 700;
+            margin-bottom: 16px;
+            padding-bottom: 8px;
+            border-bottom: 2px solid var(--primary-light);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        h3 {
+            color: var(--text-main);
+            font-size: 1.15rem;
+            font-weight: 600;
+            margin: 20px 0 10px;
+        }
+
+        p {
+            margin-bottom: 14px;
+            color: var(--text-main);
+        }
+
+        ul, ol {
+            margin: 12px 0 18px 24px;
+            color: var(--text-main);
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        .table-responsive {
+            overflow-x: auto;
+            margin: 18px 0;
+            border-radius: var(--radius-sm);
+            border: 1px solid var(--border-color);
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 0.92rem;
+            background: #FFFFFF;
+            text-align: left;
+        }
+
+        th {
+            background-color: #F1F5F9;
+            color: #334155;
+            font-weight: 700;
+            padding: 14px 16px;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        td {
+            padding: 12px 16px;
+            border-bottom: 1px solid var(--border-color);
+            vertical-align: top;
+        }
+
+        tr:last-child td {
+            border-bottom: none;
+        }
+
+        .permission-badge {
+            display: inline-block;
+            background: #EEF2FF;
+            color: #4F46E5;
+            font-family: monospace;
+            padding: 3px 8px;
+            border-radius: 4px;
+            font-size: 0.85rem;
+            font-weight: 600;
+        }
+
+        .highlight-chip {
+            background: #FEF3C7;
+            color: #B45309;
+            padding: 2px 8px;
+            border-radius: 4px;
+            font-size: 0.85rem;
+            font-weight: 600;
+        }
+
+        .contact-card {
+            background: linear-gradient(to right, #F8FAFC, #EFF6FF);
+            border: 1px solid #BFDBFE;
+            border-radius: var(--radius-md);
+            padding: 24px;
+            margin-top: 16px;
+        }
+
+        .contact-card p {
+            margin-bottom: 8px;
+        }
+
+        a {
+            color: var(--primary);
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            color: var(--text-muted);
+            font-size: 0.88rem;
+        }
+
+        @media (max-width: 640px) {
+            .container {
+                padding: 20px 14px 60px;
+            }
+            header {
+                padding: 32px 20px;
+            }
+            header h1 {
+                font-size: 1.75rem;
+            }
+            .card {
+                padding: 20px 16px;
+            }
+            .meta-bar {
+                flex-direction: column;
+                gap: 8px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <span class="badge">Official Policy</span>
+            <h1>Privacy Policy</h1>
+            <p class="subtitle">Transparency on how Europass CV Maker handles and protects your personal data.</p>
+            <div class="meta-bar">
+                <div class="meta-item"><strong>Application:</strong> Europass CV Maker</div>
+                <div class="meta-item"><strong>Package ID:</strong> com.app.europass_cv_maker</div>
+                <div class="meta-item"><strong>Effective Date:</strong> August 12, 2026</div>
+                <div class="meta-item"><strong>Last Updated:</strong> August 12, 2026</div>
+            </div>
+        </header>
+
+        <div class="summary-box">
+            <h3>🔒 Privacy Summary at a Glance</h3>
+            <p><strong>Europass CV Maker is built with a privacy-first, offline-first architecture.</strong> All your resume data, personal details, uploaded photos, and generated PDF files remain 100% on your local device. We do NOT collect, transmit, sell, or store your personal information on any external servers or third-party cloud databases.</p>
+        </div>
+
+        <section class="card">
+            <h2>1. Introduction & Overview</h2>
+            <p>Welcome to <strong>Europass CV Maker</strong> ("the Application", "we", "our", or "us"). We value your privacy and are committed to safeguarding the personal information you input while building your resume and curriculum vitae.</p>
+            <p>This Privacy Policy explains how our mobile application handles your information, what device permissions are utilized, and your rights concerning your data in accordance with the <strong>Google Play Developer Program Policies</strong>, <strong>General Data Protection Regulation (GDPR)</strong>, and <strong>California Consumer Privacy Act (CCPA)</strong>.</p>
+        </section>
+
+        <section class="card">
+            <h2>2. Information Collection & Storage</h2>
+            <p>Our application operates entirely offline on your device without requiring you to create an account or provide credentials.</p>
+            
+            <h3>A. Personal Information Processed Locally</h3>
+            <p>When you create or edit a resume, you may enter the following data into the app:</p>
+            <ul>
+                <li><strong>Personal Identity:</strong> Full Name, Date of Birth, Gender, Nationality, Profile Photo.</li>
+                <li><strong>Contact Information:</strong> Email address, Phone number, Website/Portfolio URL, LinkedIn URL, Physical address (Street, City, Postal Code, Country).</li>
+                <li><strong>Professional Details:</strong> Professional Summary/Profile, Work Experiences (Job Titles, Employers, Dates, Descriptions).</li>
+                <li><strong>Education & Qualifications:</strong> Degrees, Institutions, Fields of Study, Dates, Grades.</li>
+                <li><strong>Skills & Competencies:</strong> Digital/Technical Skills, Mother Tongues, Foreign Languages & CEFR proficiencies, Driving Licences.</li>
+                <li><strong>Additional CV Sections:</strong> Projects, Certifications, Publications, Volunteering, Awards, Memberships, Conferences, References, and Custom Sections.</li>
+            </ul>
+            <p><strong>Storage:</strong> All the above information is saved strictly within the private local storage sandbox of your device (in JSON format and cached image files). It is never transmitted across the network to our developers or any third party.</p>
+
+            <h3>B. Automatically Collected Information & Telemetry</h3>
+            <ul>
+                <li><strong>No Analytics SDKs:</strong> We do not embed trackers like Firebase Analytics, Mixpanel, or Flurry.</li>
+                <li><strong>No Advertising SDKs:</strong> We do not display third-party advertisements or integrate ad trackers (e.g., Google AdMob, Unity Ads).</li>
+                <li><strong>No Device Fingerprinting:</strong> We do not track your device's unique IMEI, advertising ID (GAID), or location.</li>
+            </ul>
+        </section>
+
+        <section class="card">
+            <h2>3. Device Permissions & Purpose</h2>
+            <p>To provide full resume-building and export capabilities, Europass CV Maker requests certain Android system permissions. Each permission is used solely for its explicit user-initiated function:</p>
+            
+            <div class="table-responsive">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Permission</th>
+                            <th>Category</th>
+                            <th>Purpose & Usage</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><span class="permission-badge">CAMERA</span></td>
+                            <td>Optional / Media</td>
+                            <td>Allows you to take a photo using your device camera to crop and use as your CV profile picture. Only accessed when you explicitly tap the camera option.</td>
+                        </tr>
+                        <tr>
+                            <td><span class="permission-badge">READ_MEDIA_IMAGES</span><br><span class="permission-badge">READ_EXTERNAL_STORAGE</span></td>
+                            <td>Media & Files</td>
+                            <td>Allows you to pick an existing profile picture from your photo gallery or select a previously exported CV JSON file for backup restoration.</td>
+                        </tr>
+                        <tr>
+                            <td><span class="permission-badge">WRITE_EXTERNAL_STORAGE</span><br><small>(Android 9 and below)</small></td>
+                            <td>Storage</td>
+                            <td>Used on legacy Android versions to save exported PDF resumes and JSON backups directly to your Downloads or public Documents directory.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <p><em>Note: You can grant or revoke these permissions at any time via your device's <strong>Settings &gt; Apps &gt; Europass CV Maker &gt; Permissions</strong>.</em></p>
+        </section>
+
+        <section class="card">
+            <h2>4. Third-Party Services & Libraries</h2>
+            <p>Europass CV Maker utilizes select open-source libraries to power PDF generation, image cropping, and UI rendering:</p>
+            <ul>
+                <li><strong>Google Fonts:</strong> Bundled/cached typography to ensure standardized, professional resume font styling.</li>
+                <li><strong>Native System Share Sheet:</strong> When you choose to share your exported PDF or JSON file (via email, messaging, or cloud drive), processing is handed directly to Android's secure system share dialog and the destination application of your choice.</li>
+            </ul>
+            <p>No third-party SDK has access to your resume contents through our application.</p>
+        </section>
+
+        <section class="card">
+            <h2>5. Data Retention & Deletion (Your Rights)</h2>
+            <p>Because all data resides exclusively on your local device, you possess total control over your information at all times:</p>
+            <ul>
+                <li><strong>Editing & Deleting Individual CVs:</strong> You can edit or delete any CV entry directly from the application's dashboard. Deletion permanently removes the corresponding JSON file and associated photo from local storage.</li>
+                <li><strong>Complete Data Erasure:</strong> You can wipe all app data at once by navigating to your Android <strong>Settings &gt; Apps &gt; Europass CV Maker &gt; Storage &gt; Clear Data</strong>, or by uninstalling the application.</li>
+                <li><strong>Data Portability:</strong> You can export your data anytime as a standardized JSON backup file or as a printable/shareable PDF document.</li>
+            </ul>
+        </section>
+
+        <section class="card">
+            <h2>6. Security of Your Data</h2>
+            <p>We implement the following measures to ensure the security and privacy of your data:</p>
+            <ul>
+                <li><strong>Sandboxed App Directory:</strong> Your CV files and cropped photos are stored in Android's isolated internal storage directory, which cannot be accessed by other unprivileged apps on your device.</li>
+                <li><strong>No Remote Vulnerabilities:</strong> Because there are no backend databases, user accounts, or server API endpoints, your CV data is not susceptible to remote server data breaches.</li>
+            </ul>
+        </section>
+
+        <section class="card">
+            <h2>7. Children's Privacy</h2>
+            <p>Our application is intended for job seekers, students, and professionals creating curriculum vitae. We do not knowingly collect, solicit, or process personal identifiable information from children under the age of 13 (or under 16 in the European Union). If you believe a child has created content on a shared device, all such data can be instantly removed by clearing app storage.</p>
+        </section>
+
+        <section class="card">
+            <h2>8. Changes to This Privacy Policy</h2>
+            <p>We may periodically update our Privacy Policy to reflect app improvements or regulatory updates. Any changes will be posted on this page with an updated "Last Updated" revision date. We encourage users to periodically review this page for the latest privacy practices.</p>
+        </section>
+
+        <section class="card">
+            <h2>9. Contact Us & Support</h2>
+            <p>If you have any questions, suggestions, or concerns regarding this Privacy Policy or our privacy practices, please contact us:</p>
+            
+            <div class="contact-card">
+                <p><strong>Developer / Support Team:</strong> Europass CV Maker Support</p>
+                <p><strong>Email Address:</strong> <a href="mailto:nexusplayengine@protonmail.com">nexusplayengine@protonmail.com</a></p>
+                <p><strong>Response Time:</strong> We typically respond to support and privacy inquiries within 24–48 business hours.</p>
+            </div>
+        </section>
+
+        <footer>
+            <p>&copy; 2026 Europass CV Maker. All rights reserved.</p>
+            <p>Designed for compliance with Google Play Store Developer Policies.</p>
+        </footer>
+    </div>
+</body>
+</html>
