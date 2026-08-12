@@ -329,13 +329,13 @@
 
         <section class="card">
             <h2>3. Device Permissions & Purpose</h2>
-            <p>To provide full resume-building and export capabilities, Europass CV Maker requests certain Android system permissions. Each permission is used solely for its explicit user-initiated function:</p>
+            <p>Europass CV Maker utilizes modern, privacy-preserving Android system pickers and minimal device permissions. Each permission or system picker is used solely for its explicit user-initiated function:</p>
             
             <div class="table-responsive">
                 <table>
                     <thead>
                         <tr>
-                            <th>Permission</th>
+                            <th>Permission / System Feature</th>
                             <th>Category</th>
                             <th>Purpose & Usage</th>
                         </tr>
@@ -347,9 +347,9 @@
                             <td>Allows you to take a photo using your device camera to crop and use as your CV profile picture. Only accessed when you explicitly tap the camera option.</td>
                         </tr>
                         <tr>
-                            <td><span class="permission-badge">READ_MEDIA_IMAGES</span><br><span class="permission-badge">READ_EXTERNAL_STORAGE</span></td>
+                            <td><span class="permission-badge">Android Photo Picker</span><br><small>(Privacy-Preserving System Picker)</small></td>
                             <td>Media & Files</td>
-                            <td>Allows you to pick an existing profile picture from your photo gallery or select a previously exported CV JSON file for backup restoration.</td>
+                            <td>Allows you to select a profile photo from your gallery using Android's secure system Photo Picker. No broad media/storage permissions (such as READ_MEDIA_IMAGES) are requested or required.</td>
                         </tr>
                         <tr>
                             <td><span class="permission-badge">WRITE_EXTERNAL_STORAGE</span><br><small>(Android 9 and below)</small></td>
@@ -359,7 +359,7 @@
                     </tbody>
                 </table>
             </div>
-            <p><em>Note: You can grant or revoke these permissions at any time via your device's <strong>Settings &gt; Apps &gt; Europass CV Maker &gt; Permissions</strong>.</em></p>
+            <p><em>Note: You can grant or revoke optional permissions at any time via your device's <strong>Settings &gt; Apps &gt; Europass CV Maker &gt; Permissions</strong>.</em></p>
         </section>
 
         <section class="card">
