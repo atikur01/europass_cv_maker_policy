@@ -288,26 +288,26 @@
                 <div class="meta-item"><strong>Application:</strong> Europass CV Maker</div>
                 <div class="meta-item"><strong>Package ID:</strong> com.app.europass_cv_maker</div>
                 <div class="meta-item"><strong>Effective Date:</strong> August 12, 2026</div>
-                <div class="meta-item"><strong>Last Updated:</strong> August 12, 2026</div>
+                <div class="meta-item"><strong>Last Updated:</strong> September 3, 2026</div>
             </div>
         </header>
 
         <div class="summary-box">
             <h3>🔒 Privacy Summary at a Glance</h3>
-            <p><strong>Europass CV Maker is built with a privacy-first, offline-first architecture.</strong> All your resume data, personal details, uploaded photos, and generated PDF files remain 100% on your local device. We do NOT collect, transmit, sell, or store your personal information on any external servers or third-party cloud databases.</p>
+            <p><strong>Europass CV Maker is built with a privacy-first architecture.</strong> All your resume data, personal details, uploaded photos, and generated PDF files remain 100% on your local device. We do NOT collect, transmit, sell, or store your personal resume information on any external servers. We utilize standard device identifiers (such as the Google Advertising ID) solely for application analytics, performance monitoring, and advertising via trusted Google services.</p>
         </div>
 
         <section class="card">
             <h2>1. Introduction & Overview</h2>
             <p>Welcome to <strong>Europass CV Maker</strong> ("the Application", "we", "our", or "us"). We value your privacy and are committed to safeguarding the personal information you input while building your resume and curriculum vitae.</p>
-            <p>This Privacy Policy explains how our mobile application handles your information, what device permissions are utilized, and your rights concerning your data in accordance with the <strong>Google Play Developer Program Policies</strong>, <strong>General Data Protection Regulation (GDPR)</strong>, and <strong>California Consumer Privacy Act (CCPA)</strong>.</p>
+            <p>This Privacy Policy explains how our mobile application handles your information, what device identifiers and permissions are utilized, and your rights concerning your data in accordance with the <strong>Google Play Developer Program Policies</strong>, <strong>General Data Protection Regulation (GDPR)</strong>, and <strong>California Consumer Privacy Act (CCPA)</strong>.</p>
         </section>
 
         <section class="card">
             <h2>2. Information Collection & Storage</h2>
-            <p>Our application operates entirely offline on your device without requiring you to create an account or provide credentials.</p>
+            <p>Our application is designed so that your professional resume content is created and maintained locally on your device without requiring account registration.</p>
             
-            <h3>A. Personal Information Processed Locally</h3>
+            <h3>A. Personal CV Information (Processed Strictly Locally)</h3>
             <p>When you create or edit a resume, you may enter the following data into the app:</p>
             <ul>
                 <li><strong>Personal Identity:</strong> Full Name, Date of Birth, Gender, Nationality, Profile Photo.</li>
@@ -317,19 +317,20 @@
                 <li><strong>Skills & Competencies:</strong> Digital/Technical Skills, Mother Tongues, Foreign Languages & CEFR proficiencies, Driving Licences.</li>
                 <li><strong>Additional CV Sections:</strong> Projects, Certifications, Publications, Volunteering, Awards, Memberships, Conferences, References, and Custom Sections.</li>
             </ul>
-            <p><strong>Storage:</strong> All the above information is saved strictly within the private local storage sandbox of your device (in JSON format and cached image files). It is never transmitted across the network to our developers or any third party.</p>
+            <p><strong>Storage:</strong> All the above resume information is saved strictly within the private local storage sandbox of your device (in JSON format and cached image files). It is never transmitted across the network to our developers or any third party.</p>
 
-            <h3>B. Automatically Collected Information & Telemetry</h3>
+            <h3>B. Automatically Collected Information & Device Identifiers (Analytics & Performance)</h3>
+            <p>To ensure application stability, understand user engagement, optimize features, and support app maintenance, we collect certain non-sensitive technical data and device identifiers:</p>
             <ul>
-                <li><strong>No Analytics SDKs:</strong> We do not embed trackers like Firebase Analytics, Mixpanel, or Flurry.</li>
-                <li><strong>No Advertising SDKs:</strong> We do not display third-party advertisements or integrate ad trackers (e.g., Google AdMob, Unity Ads).</li>
-                <li><strong>No Device Fingerprinting:</strong> We do not track your device's unique IMEI, advertising ID (GAID), or location.</li>
+                <li><strong>Google Advertising ID (AAID / GAID):</strong> We access the standard Google Advertising ID via the <code>AD_ID</code> permission. This identifier is used for analytics, app diagnostic measurement, and advertising attribution.</li>
+                <li><strong>App Analytics & Usage Metrics:</strong> Through Firebase Analytics, we collect aggregated information including screen navigation events, button interactions, session duration, and feature adoption.</li>
+                <li><strong>Technical & Diagnostics Data:</strong> Device model, operating system version, app version, language/locale settings, and crash reports.</li>
             </ul>
         </section>
 
         <section class="card">
             <h2>3. Device Permissions & Purpose</h2>
-            <p>Europass CV Maker utilizes modern, privacy-preserving Android system pickers and minimal device permissions. Each permission or system picker is used solely for its explicit user-initiated function:</p>
+            <p>Europass CV Maker requests only the permissions necessary to deliver its core features, support analytics, and manage consent:</p>
             
             <div class="table-responsive">
                 <table>
@@ -342,6 +343,16 @@
                     </thead>
                     <tbody>
                         <tr>
+                            <td><span class="permission-badge">AD_ID</span><br><small>(Google Play Services)</small></td>
+                            <td>Device Identifiers</td>
+                            <td>Allows Google Play services (Firebase Analytics and Google AdMob) to access the standard Advertising ID for analytics, usage metrics, and ad measurement.</td>
+                        </tr>
+                        <tr>
+                            <td><span class="permission-badge">INTERNET & ACCESS_NETWORK_STATE</span></td>
+                            <td>Network</td>
+                            <td>Enables network connectivity for Firebase Analytics, Remote Config feature flags, Google Fonts, and Google Mobile Ads.</td>
+                        </tr>
+                        <tr>
                             <td><span class="permission-badge">CAMERA</span></td>
                             <td>Optional / Media</td>
                             <td>Allows you to take a photo using your device camera to crop and use as your CV profile picture. Only accessed when you explicitly tap the camera option.</td>
@@ -349,7 +360,7 @@
                         <tr>
                             <td><span class="permission-badge">Android Photo Picker</span><br><small>(Privacy-Preserving System Picker)</small></td>
                             <td>Media & Files</td>
-                            <td>Allows you to select a profile photo from your gallery using Android's secure system Photo Picker. No broad media/storage permissions (such as READ_MEDIA_IMAGES) are requested or required.</td>
+                            <td>Allows you to select a profile photo from your gallery using Android's secure system Photo Picker. No broad media or storage permissions are requested.</td>
                         </tr>
                         <tr>
                             <td><span class="permission-badge">WRITE_EXTERNAL_STORAGE</span><br><small>(Android 9 and below)</small></td>
@@ -363,19 +374,25 @@
         </section>
 
         <section class="card">
-            <h2>4. Third-Party Services & Libraries</h2>
-            <p>Europass CV Maker utilizes select open-source libraries to power PDF generation, image cropping, and UI rendering:</p>
+            <h2>4. Third-Party Services & SDKs</h2>
+            <p>We integrate reputable third-party SDKs provided by Google LLC to support analytics, remote configuration, and advertising:</p>
             <ul>
-                <li><strong>Google Fonts:</strong> Bundled/cached typography to ensure standardized, professional resume font styling.</li>
-                <li><strong>Native System Share Sheet:</strong> When you choose to share your exported PDF or JSON file (via email, messaging, or cloud drive), processing is handed directly to Android's secure system share dialog and the destination application of your choice.</li>
+                <li><strong>Google Firebase Analytics:</strong> Used to track anonymous usage statistics and app interaction events to improve user experience. Firebase Analytics utilizes the Google Advertising ID and app instance identifiers. (<a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Google Privacy Policy</a>)</li>
+                <li><strong>Google Firebase Remote Config:</strong> Used to dynamically configure app parameters and ensure stability across varying Android versions and devices.</li>
+                <li><strong>Google Mobile Ads (AdMob):</strong> Used to display in-app advertisements. AdMob may process the Advertising ID and device information for ad serving and frequency capping in compliance with applicable laws and consent choices. (<a href="https://policies.google.com/technologies/ads" target="_blank" rel="noopener noreferrer">Google Ads Privacy & Terms</a>)</li>
+                <li><strong>Google User Messaging Platform (UMP):</strong> Facilitates user consent management in compliance with GDPR, ePrivacy, and Google Play policies.</li>
+                <li><strong>Google Fonts:</strong> Provides typography styling for resume layouts.</li>
+                <li><strong>Native System Share Sheet:</strong> Enables seamless sharing of exported PDF resumes or JSON backups through Android's secure system share dialog to the user's destination of choice.</li>
             </ul>
-            <p>No third-party SDK has access to your resume contents through our application.</p>
+            <p><strong>Important:</strong> None of these third-party services have access to your resume contents, personal CV details, uploaded photos, or generated PDF documents.</p>
         </section>
 
         <section class="card">
-            <h2>5. Data Retention & Deletion (Your Rights)</h2>
-            <p>Because all data resides exclusively on your local device, you possess total control over your information at all times:</p>
+            <h2>5. User Choices & Managing Advertising ID</h2>
+            <p>You have full control over your data, consent preferences, and device advertising identifiers:</p>
             <ul>
+                <li><strong>Resetting or Deleting Advertising ID:</strong> You can reset or delete your device's Google Advertising ID at any time via Android <strong>Settings &gt; Google &gt; Ads &gt; Reset advertising ID</strong> or <strong>Delete advertising ID</strong> (or <strong>Settings &gt; Privacy &gt; Ads</strong>).</li>
+                <li><strong>In-App Privacy Preferences:</strong> If you are located in regions requiring consent (e.g., EEA/UK), you can update your consent choices anytime via the in-app <strong>Settings &gt; Privacy Preferences</strong>.</li>
                 <li><strong>Editing & Deleting Individual CVs:</strong> You can edit or delete any CV entry directly from the application's dashboard. Deletion permanently removes the corresponding JSON file and associated photo from local storage.</li>
                 <li><strong>Complete Data Erasure:</strong> You can wipe all app data at once by navigating to your Android <strong>Settings &gt; Apps &gt; Europass CV Maker &gt; Storage &gt; Clear Data</strong>, or by uninstalling the application.</li>
                 <li><strong>Data Portability:</strong> You can export your data anytime as a standardized JSON backup file or as a printable/shareable PDF document.</li>
